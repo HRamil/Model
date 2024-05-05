@@ -1,4 +1,5 @@
 import Logo from "../logo";
+import {headerData} from '@/api/headerData'
 
 //style
 import './header.scss'
