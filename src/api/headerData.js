@@ -56,5 +56,9 @@ export const headerData =
         {
             title: 'Contact',
             slug: '/contact'
+        },
+        {
+            title: 'Faq',
+            slug: '/faq'
         }
     ]

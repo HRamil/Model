@@ -1,2 +1,26 @@
 @import '@/style/variables.scss';
 
+.headerLink {
+    position: relative;
+    display: block;
+
+    a {
+        display: block;
+    }
+
+    div {
+        padding: 15px;
+        border-radius: 10px;
+        width: 150px;
+        display: none;
+        background: $inkBlack;
+        position: absolute;
+        margin: 20px 0 0 0;
+    }
+
+    &:hover {
+        >div {
+            display: block;
+        }
+    }
+}
