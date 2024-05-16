@@ -2,7 +2,25 @@
 
 
 .blogPage {
+    background: $black;
+    min-height: 100vh;
+
+    .container {
+        padding: 30px 0;
+    }
+
     .banner {
+        position: relative;
+
+        h1 {
+            color: $yellow;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 35%);
+            font-size: 36px;
+        }
+
         .image {
             background: $black;
 
