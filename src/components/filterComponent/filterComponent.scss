@@ -1,0 +1,41 @@
+@import '@/style/variables.scss';
+
+.filterComponent {
+    position: relative;
+    width: 200px;
+
+    .choosen,
+    .option {
+        padding: 10px 15px;
+        background: $yellow;
+        cursor: pointer;
+    }
+
+    .choosen {
+        position: relative;
+
+        img {
+            position: absolute;
+            width: 15px;
+            height: auto;
+            top: 50%;
+            right: 10px;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .options {
+        margin-top: 5px;
+        width: 100%;
+        background: $yellow;
+        position: absolute;
+        max-height: 200px;
+        overflow-y: scroll;
+
+        .option {
+            &:hover {
+                background: $gray;
+            }
+        }
+    }
+}

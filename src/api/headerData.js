@@ -6,7 +6,7 @@ export const headerData =
             sub: [
                 {
                     title: 'Model',
-                    slug: '/model'
+                    slug: '/new_face/models'
                 }
                 ,
                 {
