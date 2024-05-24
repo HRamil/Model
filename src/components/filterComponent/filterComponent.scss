@@ -30,7 +30,7 @@
         background: $yellow;
         position: absolute;
         max-height: 200px;
-        overflow-y: scroll;
+        overflow-y: auto;
 
         .option {
             &:hover {

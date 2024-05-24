@@ -10,15 +10,8 @@ import { useSelector } from 'react-redux'
 import { RootState } from '@/redux/store'
 
 export default function page() {
-  const eyeColors = [
-    'all',
-    'red',
-    'green',
-    'blue',
-    'black',
-    'brown'
-  ]
   const models = useSelector((state: RootState) => state.models.data)
+  const eyeColors = models !== null ? [...(models.map((model: any) => model.eye_color))] : null;
 
   const [eye, setEye] = useState('all')
   return (
@@ -28,11 +21,12 @@ export default function page() {
           <FilterComponent value={eye} setValue={setEye} data={eyeColors} />
         </div>
         <div className="list">
-          {models !== null ?
-            models.map((model: any) => {
-              return (
-                <PersonComponent data={model} />
-              )
+        {models !== null ?
+            models.map((model: any, index: number) => {
+              if (eye === 'all' || model.eye_color === eye) {
+                return <PersonComponent key={index} data={model} />;
+              }
+              return null;
             })
             : null}
         </div>
