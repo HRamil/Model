@@ -16,7 +16,7 @@ export default function page() {
   const hairColors = models !== null ? ["All", ...(models.map((model: any) => model.hair_color))] : null;
   const shoeSizes = models !== null ? ["All", ...(models.map((model: any) => model.shoe_size))] : null;
 
-  const [hair, sethair] = useState('All')
+  const [hair, setHair] = useState('All')
   const [eye, setEye] = useState('All')
   const [shoe, setShoe] = useState('All')
 
@@ -24,7 +24,7 @@ export default function page() {
     <div className='models'>
       <div className='container'>
         <div className="filters">
-          <FilterComponent value={hair} setValue={sethair} data={hairColors} />
+          <FilterComponent value={hair} setValue={setHair} data={hairColors} />
           <FilterComponent value={eye} setValue={setEye} data={eyeColors} />
           <FilterComponent value={shoe} setValue={setShoe} data={shoeSizes} />
         </div>
