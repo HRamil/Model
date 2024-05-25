@@ -14,9 +14,9 @@ export default function Header() {
                 </div>
                 <div className="headerData">
                     {
-                        headerData.map(data => {
+                        headerData.map((data , index) => {
                             return (
-                                <HeaderLink data={data} />
+                                <HeaderLink data={data} key={index}/>
                             )
                         })
                     }

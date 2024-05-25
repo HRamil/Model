@@ -11,9 +11,9 @@ export default function HeaderLink(props: any) {
             </Link>
             {props.data.hasOwnProperty('sub') ?
                 <div>
-                    {props.data.sub.map((sub: any) => {
+                    {props.data.sub.map((sub: any, index: number) => {
                         return (
-                            <Link href={sub.slug}>
+                            <Link href={sub.slug} key={index}>
                                 {sub.title}
                             </Link>
                         )

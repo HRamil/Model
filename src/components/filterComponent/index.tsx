@@ -22,9 +22,9 @@ export default function FilterComponent(props: any) {
             </div>
             {open ?
                 <div className='options'>
-                    {props.data.map((value: any) => {
+                    {props.data.map((value: any , index :number) => {
                         return (
-                            <div className='option' onClick={() => { props.setValue(value) }}>
+                            <div className='option' onClick={() => { props.setValue(value) }} key={index}>
                                 {value}
                             </div>
                         )

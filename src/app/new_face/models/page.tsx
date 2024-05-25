@@ -1,13 +1,13 @@
 'use client'
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import PersonComponent from '@/components/personComponent'
 import FilterComponent from '@/components/filterComponent'
+import { useSelector } from 'react-redux'
+import { RootState } from '@/redux/store'
 
 //style
 import './models.scss'
-import { useSelector } from 'react-redux'
-import { RootState } from '@/redux/store'
 
 export default function page() {
   const models = useSelector((state: RootState) => state.models.data)
