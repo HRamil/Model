@@ -9,7 +9,7 @@ import { RootState } from '@/redux/store'
 //style
 import './models.scss'
 
-export default function page() {
+export default function Page() {
   const models = useSelector((state: RootState) => state.models.data)
 
   const eyeColors = models !== null ? ["All", ...(models.map((model: any) => model.eye_color))] : null;

@@ -6,11 +6,11 @@ export const modelsAsync = createAsyncThunk('data/fetchModelsData', async () => 
     return data;
 });
 
-interface CategoryState {
+interface ModelsState {
     data: any;
 }
 
-const initialState: CategoryState = {
+const initialState: ModelsState = {
     data: null,
 };
 
