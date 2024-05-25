@@ -2,7 +2,6 @@
 
 footer {
     background: $black;
-    border-top: 1px solid $yellow;
     padding: 30px 0;
 
     .container {
@@ -10,36 +9,83 @@ footer {
         flex-direction: row;
         justify-content: space-between;
 
-        .links {
+        .aboutUs {
+            width: calc(100% / 3.5);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
             h3 {
-                color: $yellow;
-                margin-bottom: 20px;
+                color: $white;
             }
 
-            .sosial-icon {
+            p {
+                color: $gray2;
+            }
+
+            >div {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: center;
-                gap: 25px;
+                gap: 10px;
 
-                a {
+                img {
+                    height: 15px;
+                    width: auto;
+                }
 
-                    img {
-                        width: auto;
-                        height: 20px;
-                    }
+                p {
+                    color: $white;
                 }
             }
+        }
 
-            .pages {
+        .sosialNetwork {
+            width: calc(100% / 3.5);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h3 {
+                color: $white;
+            }
+
+            p {
+                color: $gray2;
+            }
+
+            >div {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
+                flex-direction: row;
                 gap: 15px;
 
-                a {
-                    color: $white;
+                img {
+                    height: 20px;
+                    width: auto;
+                }
+            }
+        }
+
+        .instagram {
+            width: calc(100% / 3.5);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h3 {
+                color: $white;
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 20px;
+
+                img {
+                    width: calc(50% - 10px);
+                    height: auto;
                 }
             }
         }

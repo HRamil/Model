@@ -4,7 +4,7 @@ import Image from 'next/image'
 import './logo.scss'
 
 //image
-import logo from '@/images/newFaceLogo.webp'
+import logo from '@/images/newFaceLogo.jpg'
 
 export default function Logo() {
     return (
