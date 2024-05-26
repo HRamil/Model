@@ -24,30 +24,16 @@ export const headerData =
             ]
         },
         {
-            title: 'Projects',
-            slug: '/projects',
-            sub: [
-                {
-                    title: 'TV',
-                    slug: '/slug'
-                },
-                {
-                    title: 'Digital',
-                    slug: '/digital'
-                }
-            ]
+            title: 'Top Models',
+            slug: '/topModels',
         },
         {
-            title: 'Supporters',
-            slug: '/supporters'
+            title: 'Actors',
+            slug: '/actors'
         },
         {
-            title: 'Supporters',
-            slug: '/supporters'
-        },
-        {
-            title: 'Employee',
-            slug: '/employee'
+            title: 'Media',
+            slug: '/media'
         },
         {
             title: 'Blog',
