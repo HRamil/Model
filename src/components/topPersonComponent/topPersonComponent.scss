@@ -1,5 +1,12 @@
 @import '@/style/variables.scss';
 
-.topPersonComponent{
+.topPersonComponent {
+    padding: 100px 0 0 0 ;
+    background: $black;
     
+    .container {
+        display: grid;
+        grid-template-columns: calc((100% - 90px)/4);
+        grid-gap: 30px;
+    }
 }

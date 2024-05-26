@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://158.220.95.65:8000/api';
+const API_URL = 'https://zahiriyumrukla.online/api';
 
 export const fetchModelsData = async () => {
     try {
