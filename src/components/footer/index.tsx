@@ -22,7 +22,7 @@ export default function Footer() {
 
     useEffect(() => {
         dispatch(modelsAsync())
-    }, [dispatch])
+    }, [dispatch]) 
 
     return (
         <footer>
@@ -30,7 +30,7 @@ export default function Footer() {
                 <div className="aboutUs">
                     <h3>About Us</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
                     </p>
                     <div>
                         <Image src={phone} alt='phone' />
@@ -50,13 +50,13 @@ export default function Footer() {
                     <div>
                         <Image src={fb} alt='facebook' />
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
                         </p>
                     </div>
                     <div>
                         <Image src={tiktok} alt='tiktok' />
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s
                         </p>
                     </div>
                 </div>
