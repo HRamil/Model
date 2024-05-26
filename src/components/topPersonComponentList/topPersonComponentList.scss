@@ -1,0 +1,7 @@
+@import '@/style/variables.scss';
+
+.topPersonComponentList{
+    display: grid;
+    grid-template-columns: calc((100% - 60px) / 4);
+    grid-gap: 20px ;
+}

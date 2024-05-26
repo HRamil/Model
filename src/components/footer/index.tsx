@@ -22,7 +22,7 @@ export default function Footer() {
 
     useEffect(() => {
         dispatch(modelsAsync())
-    }, [])
+    }, [dispatch])
 
     return (
         <footer>
