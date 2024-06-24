@@ -1,0 +1,54 @@
+.headerTop {
+    background: rgba(34, 34, 34, 1);
+    width: 100%;
+    padding: 1.1806vw 0 1.11vw 0;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        >div {
+            &:first-child {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.701vw;
+
+                img {
+                    width: 1.085vw;
+                    height: auto;
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.9722vw;
+
+                .line {
+                    width: 1px;
+                    height: 0.833vw;
+                    border: 1px solid rgba(255, 255, 255, 1);
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0.65972vw;
+
+                    p {
+                        font-size: 0.9722vw;
+                        font-weight: 500;
+                        line-height: 1.45833vw;
+                        letter-spacing: -0.025em;
+                        color: rgba(255, 255, 255, 1);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

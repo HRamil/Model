@@ -1,36 +1,5 @@
 @import '@/style/variables.scss';
 
 header {
-    background: $black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-    border-bottom: 1px solid $blue;
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-
-        .logo {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transform: translate(0, 35%);
-        }
-
-        >.headerData {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 60px;
-
-            * {
-                color: $white;
-            }
-        }
-    }
+  
 }
